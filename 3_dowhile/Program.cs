@@ -4,8 +4,8 @@ public class Program
     private static void Main(string[] args)
     {
 
-        Console.WriteLine("Quantos programadores precisam de café?");
-        int programadores = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Quantos devs precisam de café?");
+        int devs = Convert.ToInt32(Console.ReadLine());
 
         int cafesPreparados = 0;
 
@@ -13,15 +13,15 @@ public class Program
         {
             cafesPreparados++;
             Console.WriteLine($"Preparando o {cafesPreparados}° café");
-        } while (cafesPreparados < programadores);
+        } while (cafesPreparados < devs);
 
-        if (cafesPreparados > programadores)
+        if (cafesPreparados > devs)
         {
-            Console.WriteLine($"Oh não! O café está esfriando e nenhum programador está por perto!");
+            Console.WriteLine($"Oh não! O café está esfriando e nenhum dev está por perto!");
         }
         else
         {
-            Console.WriteLine($"Total de programadores felizes: {cafesPreparados}");
+            Console.WriteLine($"Total de devs felizes: {cafesPreparados}");
         }
 
     }

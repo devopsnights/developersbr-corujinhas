@@ -8,10 +8,11 @@
 
         int cafesPreparados = 0;
 
-        while (cafesPreparados < devs)
+        for (int i = 0; i < devs; i++)
         {
-            cafesPreparados++;
-            Console.WriteLine($"Preparando o {cafesPreparados}° café");
+            Console.WriteLine($"Preparando o {i}° café");
+
+            cafesPreparados = i;
         }
 
         Console.WriteLine($"Total de devs felizes: {cafesPreparados}");

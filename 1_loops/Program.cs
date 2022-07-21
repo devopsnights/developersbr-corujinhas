@@ -15,6 +15,6 @@
         cafesPreparados++;
         Console.WriteLine($"Preparando o 3° café");
 
-        Console.WriteLine($"Total de programadores felizes: {cafesPreparados}");
+        Console.WriteLine($"Total de devs felizes: {cafesPreparados}");
     }
 }
