@@ -9,12 +9,12 @@
         do
         {
             Console.WriteLine("Digite o nome do dev:");
-            developers.Add((string)Console.ReadLine() ?? string.Empty);
+            developers.Add(Console.ReadLine() as string ?? string.Empty);
 
             Console.WriteLine("Mais algum dev precisa de café? [S/N]");
-            maisdevs = Console.ReadLine().ToLower();
+            maisdevs = Console.ReadLine() as string ?? string.Empty;
 
-        } while (maisdevs.Equals("s"));
+        } while (maisdevs.ToLower().Equals("s"));
 
         foreach (var dev in developers)
         {
